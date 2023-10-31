@@ -21,7 +21,6 @@
     "service_worker": "../src/background/background.js"
   },
   "options_ui": {
-    "page": "./options.html",
-    "chrome_style": true
+    "page": "./options/options.html"
   }
 }

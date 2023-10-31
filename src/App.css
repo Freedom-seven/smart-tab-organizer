@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+/* src/App.css */
+
+body {
+  width: 300px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 18px;
+  margin: 10px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+select {
+  margin: 10px 0;
+  width: 100%;
+  padding: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:hover {
+  color: #0078d4;
 }
+
+select {
+  border: none;
+  background: #f0f0f0;
+  padding: 5px;
+}
+
+/* Category-specific styles */
+li[data-category="social"] {
+  border-left: 4px solid #3b5998; /* Facebook color */
+}
+
+li[data-category="research"] {
+  border-left: 4px solid #007acc; /* Wikipedia color */
+}
+
+li[data-category="shopping"] {
+  border-left: 4px solid #ff9900; /* Amazon color */
+}
+
+li[data-category="news"] {
+  border-left: 4px solid #1e90ff; /* News category color */
+}
+
+li[data-category="entertainment"] {
+  border-left: 4px solid #ee82ee; /* Entertainment category color */
+}
+
+/* Add more categories as needed */

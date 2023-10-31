@@ -1,0 +1,35 @@
+/* src/popup/Popup.css */
+body {
+  width: 300px;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+select {
+  margin: 10px 0;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+a {
+  text-decoration: none;
+}
+
+select {
+  border: none;
+}

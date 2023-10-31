@@ -1,10 +1,26 @@
 // Function to get the category of the current tab
 function getCategory() {
   // You can implement a logic to determine the category based on the current web page
-  if (window.location.hostname.includes("example.com")) {
-    return "example";
-  } else if (window.location.hostname.includes("anotherexample.com")) {
-    return "anotherexample";
+  if (window.location.hostname.includes("facebook.com")) {
+    return "social";
+  } else if (window.location.hostname.includes("wikipedia.org")) {
+    return "research";
+  } else if (window.location.hostname.includes("amazon.com")) {
+    return "shopping";
+  } else if (window.location.hostname.includes("youtube.com")) {
+    return "entertainment";
+  } else if (window.location.hostname.includes("linkedin.com")) {
+    return "professional";
+  } else if (window.location.hostname.includes("gmail.com")) {
+    return "email";
+  } else if (window.location.hostname.includes("stackoverflow.com")) {
+    return "development";
+  } else if (window.location.hostname.includes("github.com")) {
+    return "development";
+  } else if (window.location.hostname.includes("news.google.com")) {
+    return "news";
+  } else if (window.location.hostname.includes("twitter.com")) {
+    return "social";
   }
   return "uncategorized";
 }

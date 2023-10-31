@@ -18,14 +18,9 @@
     "128": "./images/icon128.jpg"
   },
   "background": {
-    "background.service_worker": "../src/background/background.js"
+    "service_worker": "../src/background/background.js"
   },
   "options_ui": {
     "page": "./options/options.html"
-  },
-  "content_security_policy": {
-    "extension_pages": "script-src 'self' https://unpkg.com; object-src 'self'"
   }
-  
-
 }

@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
-import TabList from "./components/TabList";
+import TabList from "../components/TabList";
 
-function App() {
+import "./Popup.css";
+
+function Popup() {
   const [tabs, setTabs] = useState([]);
   const [categoryFilter, setCategoryFilter] = useState("all");
 
@@ -54,6 +56,8 @@ function App() {
           <option value="social">Social Media</option>
           <option value="research">Research</option>
           <option value="shopping">Shopping</option>
+          <option value="news">News</option>
+          <option value="entertainment">Entertainment</option>
           {/* Add more categories as needed */}
         </select>
       </div>
@@ -62,4 +66,4 @@ function App() {
   );
 }
 
-export default App;
+export default Popup;

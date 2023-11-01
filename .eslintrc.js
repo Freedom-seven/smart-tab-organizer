@@ -9,10 +9,8 @@ module.exports = {
   globals: {
     chrome: "writable",
   },
-
   settings: {
     "eslint.validate": ["javascript", "javascriptreact", "chrome"],
   },
-
   // Add other custom ESLint rules or configuration as needed
 };

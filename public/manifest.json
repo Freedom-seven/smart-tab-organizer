@@ -5,23 +5,23 @@
   "description": "Automatically categorizes and organizes open tabs based on their content type for enhanced productivity",
   "permissions": ["tabs", "activeTab", "storage"],
   "action": {
-    "default_popup": "./public/index.html",
+    "default_popup": "./index.html",
     "default_icon": {
-      "16": "./public/images/icon16.png",
-      "48": "./public/images/icon48.png",
-      "128": "./public/images/icon128.png"
+      "16": "./images/icon16.png",
+      "48": "./images/icon48.png",
+      "128": "./images/icon128.png"
     }
   },
   "icons": {
-    "16": "./public/images/icon16.png",
-    "48": "./public/images/icon48.png",
-    "128": "./public/images/icon128.png"
+    "16": "./images/icon16.png",
+    "48": "./images/icon48.png",
+    "128": "./images/icon128.png"
   },
   "background": {
     "background.service_worker": "./src/background/background.js"
   },
   "options_ui": {
-    "page": "./public/options/options.html"
+    "page": "./options/options.html"
   },
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
